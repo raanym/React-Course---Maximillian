@@ -1,10 +1,12 @@
-import { useState, Fragment } from 'react';
+import { useState, Fragment, useRef } from 'react';
 import Card from '../UI/Card';
 import ErrorModal from '../UI/ErrorModal';
 import Button from '../UI/Button';
 import classes from './AddUser.module.css';
 
 const AddUser = (props) => {
+
+  useRef();
 
   const [enteredName, setEnteredUserName] = useState('');
   const [enteredAge, setEnteredAge] = useState('');
